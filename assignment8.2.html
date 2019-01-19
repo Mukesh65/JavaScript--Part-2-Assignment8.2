@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> function For Food</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+    function prepareFood(tableNum, items, callback) {
+        console.log('preparing food for items - ', items);
+        callback(tableNum, items);
+    }
+
+    function serveFood(tableNum, items) {
+        console.log('serving food for items - ', items);
+
+    }
+
+    var tableNum = 100;
+    var items = ["Burger", "pasta", "coke"];
+    prepareFood(tableNum, items, serveFood);
+
+    </script>
+
+  </body>
+</html>
